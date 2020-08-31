@@ -1,6 +1,7 @@
-package net.fabricmc.example.mixin;
+package hu.bendi.example.mixin;
 
 import net.minecraft.client.gui.screen.TitleScreen;
+
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -11,5 +12,10 @@ public class ExampleMixin {
 	@Inject(at = @At("HEAD"), method = "init()V")
 	private void init(CallbackInfo info) {
 		System.out.println("This line is printed by an example mod mixin!");
+		//Collection<String> strs = new ArrayList<>();
+		//strs.add("asfdsg");
+		//this.addButton(new ButtonWidget(100, 100, 100, 100, Texts.joinOrdered(strs), (asd) -> {
+		//	System.out.println("fg9hfthoo");
+		//}));
 	}
 }
