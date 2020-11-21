@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "DDD",
+      "DSD",
+      " S "
+    ],
+    "key": {
+      "D": {
+        "item": "minecraft:iron_ingot"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "test:iron-hammer",
+      "count": 1
+    }
+  }
+

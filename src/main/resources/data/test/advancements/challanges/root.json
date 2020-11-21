@@ -1,0 +1,18 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cake"
+        },
+        "title": "Challanges",
+        "description" : "In this tab, you can find challanges, that unlock various OP tools.",
+        "background": "minecraft:textures/block/chiseled_quartz_block.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "base": {
+            "trigger": "minecraft:tick",
+            "conditions": {}
+        }
+    }
+}

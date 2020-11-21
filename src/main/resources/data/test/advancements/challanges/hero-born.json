@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:anvil"
+        },
+        "title": "A Hero Born",
+        "description" : "placeholder"
+    },
+    "parent": "test:challanges/root",
+    "criteria": {
+        "heroofthev": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:hero_of_the_village": {
+                        "amplifier": {
+                            "min": 1,
+                            "max": 10
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "DDD",
+      "DSD",
+      " S "
+    ],
+    "key": {
+      "D": {
+        "item": "minecraft:gold_ingot"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "test:gold-hammer",
+      "count": 1
+    }
+  }
+
