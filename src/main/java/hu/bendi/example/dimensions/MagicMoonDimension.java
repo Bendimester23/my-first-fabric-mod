@@ -11,7 +11,7 @@ import net.minecraft.world.dimension.Dimension;
 import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.gen.chunk.ChunkGenerator;
 import net.minecraft.world.gen.chunk.ChunkGeneratorType;
-import net.minecraft.world.gen.chunk.FlatChunkGeneratorConfig;
+import net.minecraft.world.gen.chunk.DebugChunkGeneratorConfig;
 
 public class MagicMoonDimension extends Dimension {    
     
@@ -23,9 +23,9 @@ public class MagicMoonDimension extends Dimension {
 
     @Override
     public ChunkGenerator<?> createChunkGenerator() {        
-        FlatChunkGeneratorConfig generatorConfig = FlatChunkGeneratorConfig.getDefaultConfig();
+        DebugChunkGeneratorConfig generatorConfig = new DebugChunkGeneratorConfig();
         FixedBiomeSourceConfig biomeConfig = BiomeSourceType.FIXED.getConfig().setBiome(Biomes.JUNGLE);
-        return ChunkGeneratorType.FLAT.create(world, BiomeSourceType.FIXED.applyConfig(biomeConfig), generatorConfig);
+        return ChunkGeneratorType.DEBUG.create(world, BiomeSourceType.FIXED.applyConfig(biomeConfig), generatorConfig);
     }
 
     @Override
